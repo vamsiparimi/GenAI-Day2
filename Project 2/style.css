@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  transition: background-color 0.5s ease;
+}
+
+#clock {
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Karla', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+#time-container {
+  display: flex;
+}
+
+#time {
+  font-weight: bold;
+  display: inline-block;
+}
+
+#am-pm {
+  font-size: 20px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+#switch-btn {
+  border-radius: 10px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#switch-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+#color-picker {
+  display: flex;
+  justify-content: center;
+}
+
+.color-option {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.color-option:hover {
+  transform: scale(1.1);
+  border: 2px solid black;
+}
